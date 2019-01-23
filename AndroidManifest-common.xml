@@ -201,5 +201,12 @@
             android:name="com.aosp.launcher.search.AppSearchProvider"
             android:authorities="com.aosp.launcher.appssearch"
             android:exported="true" />
+
+        <!-- Hide and Lock -->
+        <activity
+            android:name=".security.hidelock.HideLockAppsActivity"
+            android:label="@string/hidelock_apps_manager_name"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true" />
     </application>
 </manifest>
