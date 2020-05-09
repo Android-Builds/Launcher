@@ -256,7 +256,8 @@ public class SettingsActivity extends Activity
                                 getString(R.string.hidelock_apps_manager_name), () -> {
                             Intent intent = new Intent(getActivity(), HideLockAppsActivity.class);
                             startActivity(intent);
-                        return true;
+			});
+                      return true;
                     });
 		    return true;
             }
