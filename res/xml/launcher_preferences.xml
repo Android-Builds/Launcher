@@ -67,9 +67,11 @@
         android:defaultValue="@bool/allow_swipe_down_clearall"
         android:persistent="true" />
 
-    <SwitchPreference
+    <Preference
         android:key="pref_hidelock_apps"
-        android:title="@string/hidelock_apps_manager_name" />
+        android:title="@string/hidelock_apps_manager_name" >
+        <intent android:action="com.android.launcher3.security.hidelock.HideLockAppsActivity"/>
+    </Preference>
 
     </PreferenceCategory>
 
